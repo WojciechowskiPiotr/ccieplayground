@@ -6,7 +6,9 @@
 
 Please follow me on:
 Facebook: https://facebook.com/Piotr.Wojciechowski.CCIE
+
 Blog: https://wordpress.com/ccieplayground
+
 LinkedIn: https://linkedin.com/in/peper
 
 ## Info
