@@ -8,7 +8,7 @@ Please follow me on
 
 Facebook: https://facebook.com/Piotr.Wojciechowski.CCIE
 
-Blog: https://wordpress.com/ccieplayground
+Blog: https://blog.it-playground.eu
 
 LinkedIn: https://linkedin.com/in/peper
 
