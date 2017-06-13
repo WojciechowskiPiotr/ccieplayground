@@ -1,0 +1,48 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1497304470000",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::certsigninglambdabucket/root-ca.key"
+            ]
+        },
+        {
+            "Sid": "Stmt1497305201000",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::certsigninglambdabucket/signing-ca.crt"
+            ]
+        },
+        {
+            "Sid": "Stmt1497305262000",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteObject",
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::certsigninglambdabucket/*.csr"
+            ]
+        },
+        {
+            "Sid": "Stmt1497305306000",
+            "Effect": "Allow",
+            "Action": [
+                "s3:DeleteObject",
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::certsigninglambdabucket/*.crt"
+            ]
+        }
+    ]
+}
