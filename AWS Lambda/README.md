@@ -1,7 +1,3 @@
-# CCIE Playground Repository
-[![Dependency Status](https://david-dm.org/atom/open-on-github
-.svg)](https://david-dm.org/atom/open-on-github)
-
 ## Author
 
 Please follow me on
@@ -14,7 +10,9 @@ LinkedIn: https://linkedin.com/in/peper
 
 ## Info
 
-This is a repository of files for posts on my blog "CCIE Playground". 
+This folder contain code used in serie of articles about Python and AWS Lambda. The following articles has been released:
+
+
 
 ## Copyright
 
