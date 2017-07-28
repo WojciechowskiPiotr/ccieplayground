@@ -1,0 +1,42 @@
+
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+     function submitToAPI() {
+       var URL = "https://PUTYOURURL.execute-api.eu-west-1.amazonaws.com/prod/sign";
+       var data = {
+         description: $('#csr-input').val()
+       };
+       $.ajax({
+         type: 'POST',
+         url: URL,
+         headers: {
+           "x-api-key": 'PUTKEYHERE'
+         },
+         dataType: 'json',
+         contentType: 'application/json',
+         data: JSON.stringify(data),
+         success: function (response) {
+            response = $.parseJSON(response)
+            $('#post-result').append(response.crt_text + "<br><br>");
+            $('#post-result').append(response.crt_pem + "<br><br>");
+         },
+         error: function () {
+           // show an error message
+           alert('Ups, there was and error while processing the form');
+         }
+       });
+     }
+    </script>
+  </head>
+  <body>
+    <form id="contact-form">
+      <label for="description-input">Insert CSR here</label>
+      <textarea id="csr-input" rows="20" cols="60" placeholder="Paste CSR here"></textarea>
+      <button type="button" onClick="submitToAPI()">Submit</button>
+    </form>
+  <hr>
+  <div id='post-result' style="font-family: monospace; white-space: pre;"></div>
+  </body>
+</html>
