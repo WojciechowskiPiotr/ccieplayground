@@ -14,7 +14,8 @@ This folder contain code used in serie of articles about Python and AWS Lambda. 
 
 - [AWS Lambda guide part I – Import your Python application to Lambda](https://blog.it-playground.eu/aws-lambda-guide-import-python-application-to-lambda/)
 - [AWS Lambda guide part II – Access to S3 service from Lambda function](https://blog.it-playground.eu/access-to-s3-service-from-lambda/)
-- [AWS Lambda guide part III – Adding S3 trigger for Lambda function](https://blog.it-playground.eu/)
+- [AWS Lambda guide part III – Adding S3 trigger for Lambda function](https://blog.it-playground.eu/adding-s3-trigger-in-lambda-function/)
+- [AWS Lambda guide part IV – API Gateway and Lambda without S3](https://blog.it-playground.eu/api-gateway-and-lambda-without-s3/)
 
 
 ## Copyright
